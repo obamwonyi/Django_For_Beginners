@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ch1-setup"
+version = "0.1.0"
+description = "for chapter 1 of the Django for beginners book"
+authors = ["obamwonyi <developer.oduwa@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
