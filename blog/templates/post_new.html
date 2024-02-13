@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>New post</h1>
+<form action="" method="post">
+    <!-- the csrf_token as usual is for preventing cross site request forgery -->
+    {% csrf_token %}
+    <!-- every other input is generated automatically according to the view class -->
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+</form>
+{% endblock content %}

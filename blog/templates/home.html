@@ -3,6 +3,7 @@
 {% block content %}
     {% for post in post_list %}
         <div class="post-entry">
+            <!-- this anchor will go to the route with the route name post-detail passing the post.pk (post primary key as parameter) -->
             <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.body }}</p>
         </div>
